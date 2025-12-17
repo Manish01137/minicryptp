@@ -526,4 +526,166 @@
       font-size: 18px;
     }
   }
+  /* ===============================
+   FOOTER – PREMIUM CRYPTO UI
+================================ */
+
+.footer {
+    background:
+      radial-gradient(circle at top, rgba(29,233,182,0.08), transparent 45%),
+      linear-gradient(180deg, #05070d, #02040a);
+    border-top: 1px solid #1f2937;
+    margin-top: 120px;
+    padding: 70px 20px 25px;
+    color: #fff;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+  }
+  
+  /* ===============================
+     BRAND
+  ================================ */
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  
+  .logo-circle {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #1de9b6, #5c6cff);
+    color: #000;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: 18px;
+    transition: all 0.4s ease;
+  }
+  
+  .footer-logo h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+  }
+  
+  /* Logo hover */
+  .footer-brand:hover .logo-circle {
+    transform: rotate(-6deg) scale(1.1);
+    box-shadow: 0 0 30px rgba(29,233,182,0.6);
+  }
+  
+  .footer-brand p {
+    color: #9aa4b2;
+    max-width: 360px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+  
+  .compliance {
+    display: inline-block;
+    font-size: 14px;
+    color: #22c55e;
+    background: rgba(34,197,94,0.1);
+    padding: 6px 12px;
+    border-radius: 999px;
+  }
+  
+  /* ===============================
+     LINKS
+  ================================ */
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+  
+  .footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #9aa4b2;
+    margin-bottom: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Arrow hover */
+  .footer-links a::after {
+    content: "→";
+    position: absolute;
+    right: -18px;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #1de9b6;
+    transform: translateX(6px);
+  }
+  
+  .footer-links a:hover::after {
+    opacity: 1;
+    right: -6px;
+  }
+  
+  /* ===============================
+     CONTACT
+  ================================ */
+  
+  .footer-contact p {
+    color: #9aa4b2;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-contact p:hover {
+    color: #ffffff;
+  }
+  
+  /* ===============================
+     BOTTOM
+  ================================ */
+  
+  .footer-bottom {
+    margin-top: 45px;
+    padding-top: 18px;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* ===============================
+     MOBILE
+  ================================ */
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .footer-logo {
+      justify-content: center;
+    }
+  
+    .footer-brand p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .footer-links a {
+      transform: none;
+    }
+  }
   
