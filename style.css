@@ -1173,3 +1173,97 @@ footer {
     margin-right: auto;
   }
 }
+/* =========================
+   HERO BASE (DESKTOP SAFE)
+========================= */
+.hero {
+  padding: 120px 15%;
+  text-align: center;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 100px 6% 80px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  /* Countdown */
+  .countdown {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .countdown div {
+    min-width: 70px;
+  }
+
+  .countdown div span {
+    font-size: 26px;
+  }
+
+  /* Heading */
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero h1 span {
+    display: block;
+    margin-top: 6px;
+  }
+
+  /* Paragraph */
+  .hero p {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+    margin: 18px auto 32px;
+  }
+
+  /* Buttons */
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-actions button {
+    width: 100%;
+    padding: 16px;
+    font-size: 15px;
+  }
+
+  /* Stats */
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 13px;
+    justify-content: center;
+  }
+}
+
+/* =========================
+   SMALL PHONES (≤480px)
+========================= */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .countdown div span {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
