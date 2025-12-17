@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Check Booking Status | CryptoSA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="status.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="logo2metaa.jpg" alt="CryptoSA Logo" class="logo-img">
+      <span class="logo-text">Metalife Ai</span>
+    </div>
+  
+    <!-- NAV LINKS -->
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="book.html">Book Now</a>
+      <a class="active">Check Status</a>
+    </nav>
+  
+    <!-- CTA -->
+    <button class="btn-primary">Get Started</button>
+  </header>
+  
+
+<!-- STATUS SECTION -->
+<section class="status-section">
+  <h1>Check <span>Booking Status</span></h1>
+  <p class="subtitle">
+    Enter your booking ID to view your current status
+  </p>
+
+  <div class="status-box">
+    <input
+      type="text"
+      id="bookingId"
+      placeholder="e.g., CRY-XXXXXXXX"
+    />
+    <button id="checkBtn">🔍</button>
+  </div>
+
+  <!-- RESULT -->
+  <div class="status-result" id="statusResult"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span class="logo-circle">C</span>
+        <h3>Metalife Ai</h3>
+      </div>
+      <p>
+        Your trusted partner for cryptocurrency services in Saudi Arabia.
+        Secure, compliant, and professional.
+      </p>
+      <span class="compliance">🛡 Saudi Regulatory Compliant</span>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a>Book Now</a>
+      <a>Check Status</a>
+      <a>Admin Portal</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📧 support@cryptosa.sa</p>
+      <p>📞 +966 XX XXX XXXX</p>
+      <p>📍 Riyadh, Saudi Arabia</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 CryptoSA. All rights reserved.
+  </div>
+</footer>
+
+<script src="status.js"></script>
+</body>
+</html>
